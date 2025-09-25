@@ -2,10 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Permitir zoom y usar viewport responsivo para accesibilidad -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="HandheldFriendly" content="true">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Moisés Vásquez CV</title>
+  <title>Moisés Vásquez - CV</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://use.fontawesome.com/809c2bfca6.js"></script>
 </head>
@@ -14,102 +15,115 @@
 <header>
     <div class="wrapper">
 
-      <div class="sidebar">
+      <aside class="sidebar" aria-labelledby="perfil-title">
           <div class="bio">
             <div class="avatar">
-              <img src="moi.JPG" alt="">
+              <img src="moi.JPG" alt="Foto de Moisés Alonso Vásquez Chávez">
             </div>
             <div class="title">
-              <h1>Moisés Alonso Vásquez Chávez</h1>
-              <h2>Ingeniero Civil Informatico</h2>
+              <h1 id="perfil-title">Moisés Alonso Vásquez Chávez</h1>
+              <h2>Ingeniero Civil Informático</h2>
             </div>
             <div class="desc">
-              <p>❤ Data cience lover, Me conocen por ser muy bueno en "<strong>Gestion de proyectos</strong>".</p>
+              <p>❤ Apasionado por la <strong>Ciencia de Datos</strong>. Me conocen por ser muy bueno en <strong>Gestión de proyectos</strong>.</p>
             </div>
             <div class="address">
               <p>Santiago, Chile.</p>
             </div>
             <div class="social">
               <ul>
-                <li><a href="https://github.com/Moi-123-Alonso"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/mois%C3%A9s-v%C3%A1squez-ch%C3%A1vez-5a08392b8/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/Moi-123-Alonso" aria-label="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mois%C3%A9s-v%C3%A1squez-ch%C3%A1vez-5a08392b8/" aria-label="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
               </ul>
-            <p> numero de contacto: +56938688590   </p>
-            <p> corero de contacto: moichavez75@gmail.com </p>
-            <p> segundo correo de contacto: mvasquezc5@correo.uss.cl</p>
+              <p>Contacto: <a href="tel:+56938688590">+56 9 3868 8590</a></p>
+              <p>Correo: <a href="mailto:moichavez75@gmail.com">moichavez75@gmail.com</a></p>
+              <p>Segundo correo: <a href="mailto:mvasquezc5@correo.uss.cl">mvasquezc5@correo.uss.cl</a></p>
             </div>
-            
           </div>
-      </div>
+      </aside>
 
-      <div class="content-wrapper">
+      <main class="content-wrapper" role="main">
           <div class="content">
 
-            <div class="title">
+            <section class="title" aria-labelledby="experiencia-title">
               <i class="fa fa-briefcase" aria-hidden="true"></i>
-              <h2>EXPERIENCE</h2>
+              <h2 id="experiencia-title">EXPERIENCIA</h2>
               <div class="item">
                 <h3>Data Cience en Proceso de Admision en la Universidad San Sebastian <span> 2023(DICIEMBRE -ENERO) - 2024 (DICIEMBRE -  ENERO)</span> </h3>
-                <p>Mi experiencia como trabajador y practicante contribuyó significativamente a mi crecimiento profesional. Trabajé en un equipo talentoso y exigente, donde la comunicación fue clave. Utilicé herramientas como Excel, SQL, Python y Power BI para extraer y analizar información relevante para la universidad. El trabajo en equipo y la comunicación efectiva fueron fundamentales para el éxito de los proyectos, y fui reconocido por mi excelente desempeño, recibiendo felicitaciones por mi contribución. </p>
+                <p>Mi experiencia como trabajador y practicante contribuyó significativamente a mi crecimiento profesional. Trabajé en un equipo talentoso y exigente, donde la comunicación fue clave. Utilicé herramientas como Excel, SQL, Python y Power BI para extraer y analizar información relevante para la universidad. El trabajo en equipo y la comunicación efectiva fueron fundamentales para el éxito de los proyectos, y fui reconocido por mi desempeño.</p>
               </div>
               <div class="item">
                 <h3>Liderazgo y gestionador de proyectos <span>2018 - 2024</span> </h3>
                 <p>A lo largo de mi carrera como estudiante, he sido reconocido por mi capacidad de liderazgo y gestión de proyectos. En 2023, lideré un equipo en la presentación de un proyecto para el Metro de Santiago, el cual fue bien recibido por profesores y representantes del Metro, aunque no se implementó debido a compromisos pendientes de algunos integrantes. Además, participo activamente en una comunidad donde gestiono proyectos para el beneficio colectivo, siendo gratamente reconocido por mi liderazgo y capacidad de organización.</p>
-                <h3>Coordinador General - Centro de Estudiantes de Informática <span>2024 - Actualidad</span> </h3>
+                <h3>Coordinador General - Centro de Estudiantes de Informática <span>2024</span> </h3>
                 <p>Como coordinador general, gestiono actividades y proyectos para la comunidad estudiantil, organizando charlas y eventos. Mi rol implica trabajar en equipo con otros estudiantes, gestionar recursos y asegurar que las iniciativas sean exitosas, impulsando el desarrollo académico y social de mis compañeros. </p>
               </div>
+              <div class="item">
+                <h3>Levantamiento de sitios webs <span>2024 - Actualidad</span> </h3>
+                <p>Durante mi formación universitaria he trabajado en el desarrollo de aplicaciones web, utilizando tecnologías como Angular y React para el frontend, Django y Java para el backend, además de MySQL como base de datos, junto con un amplio conjunto de herramientas y stacks de desarrollo.
+                  Complementando la parte técnica, aplico prácticas de aseguramiento de calidad de software alineadas con el estándar IEEE 730-2014, lo que me ha permitido estructurar proyectos con un enfoque profesional y orientado a la calidad.
+                  Actualmente, me encuentro desarrollando un proyecto para la Universidad San Sebastián, que consiste en una aplicación web para docentes con integración de Inteligencia Artificial, cuyo objetivo es asistirlos en la planificación académica y hacer más eficiente su trabajo diario.
+                  Finalmente, cuento con experiencia en metodologías ágiles y tradicionales, tales como Scrum, Cascada y modelo en V, entre otras, lo que me permite adaptarme a diferentes entornos de gestión de proyectos.
+                </p>
             </div>
 
-            <div class="title">
+            <section class="title">
               <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-              <h2>EDUCACION</h2>
+              <h2>EDUCACIÓN</h2>
               <div class="item">
-                <h3>Universidad San Sebastian <span>2021 - 2026</span></h3>
+                <h3>Universidad San Sebastián <span>2021 - 2026</span></h3>
                 <p>Como estudiante, he desarrollado habilidades tanto técnicas como de liderazgo. La universidad me ha brindado oportunidades para crecer en áreas como programación y gestión de equipos, preparándome para enfrentar desafíos profesionales futuros.</p>
               </div>
-            </div>
+            </section>
 
-            <div class="title">
+            <section class="title">
               <i class="fa fa-trophy" aria-hidden="true"></i>
-              <h2>CERTIFICATES</h2>
+              <h2>CERTIFICADOS</h2>
               <div class="item">
                 <h3>Python for Data Science <span>Marzo 2024</span> </h3>
-                <p>Certificación obtenida en Python aplicado a la ciencia de datos, desarrollando scripts eficientes para diversas áreas que requieren análisis de datos.</p>
+                <p>Certificación obtenida en Python aplicado a la ciencia de datos, desarrollando scripts eficientes para análisis de datos.</p>
               </div>
                <div class="item">
-                <h3> IT Essentials <span>Octubre 2024</span> </h3>
-                <p>Emitido por Cisco. Certificación de nivel estudiantil que acredita conocimientos básicos en hardware y software de computadoras, sistemas operativos, conceptos de redes, dispositivos móviles, solución de problemas y roles de un profesional de TI. Realización de 128 actividades interactivas y 26 horas de laboratorios prácticos usando Cisco Packet Tracer y equipos físicos. </p>
-                <p> Habilidades: 
-                    -Hardware de la computadora
-                    -Computadoras portátiles y dispositivos móviles
-                    -Conceptos de redes
-                    -Sistemas operativos y configuración de impresoras
-                    -Resolución de problemas
+                <h3>IT Essentials <span>Octubre 2024</span> </h3>
+                <p>Emitido por Cisco. Certificación que acredita conocimientos en hardware y software de computadoras, sistemas operativos, conceptos de redes y solución de problemas. Incluye actividades prácticas con Cisco Packet Tracer.</p>
+                <p>Habilidades destacadas:
+                    - Hardware de la computadora
+                    - Computadoras portátiles y dispositivos móviles
+                    - Conceptos de redes
+                    - Sistemas operativos y configuración de impresoras
+                    - Resolución de problemas
                </p>
               </div>
                <div class="item">
-                <h3>Python for Data Science <span>Octubre 2024</span> </h3>
-                <p>Conocimientos en redes, direccionamiento IP, subredes y configuración de conectividad entre dispositivos como enrutadores y conmutadores para acceso a recursos locales y remotos. </p>
-                <p>Habilidades en Ethernet, conectividad IP, direccionamiento IPv4 e IPv6, fundamentos de red y seguridad. </p>
+                <h3>CCNA: Introduction to Networks <span>Octubre 2024</span> </h3>
+                <p>Conocimientos en redes, direccionamiento IP, subredes y configuración de conectividad entre dispositivos como routers y switches.</p>
+              </div>
+              <div class="item">
+                <h3>Fundamentos de Linux <span>Abril 2024</span> </h3>
+                <p>Certifica conocimientos en uso de línea de comandos, gestión de archivos, copias de seguridad, permisos y creación de scripts básicos. Incluye prácticas de laboratorio.</p>
+              </div>
+              <div class="item">
+                <h3>Google Cloud Fundamentals: Core Infrastructure <span>Abril 2024</span> </h3>
+                <p>Curso introductorio sobre conceptos y servicios esenciales de Google Cloud, incluyendo computación y almacenamiento.</p>
               </div>
               <div class="item">
                 <h3>Curso de Liderazgo <span>Abril 2024</span> </h3>
-                <p>Certificado en liderazgo de grupos, tanto estudiantiles como profesionales. Mi desempeño fue destacado por profesores y compañeros, consolidando mis habilidades de liderazgo.</p>
+                <p>Certificado en liderazgo de grupos, tanto estudiantiles como profesionales. Mi desempeño fue destacado por profesores y compañeros.</p>
               </div>
-            </div>
-            
-            <div class="title">
+            </section>
+
+            <section class="title">
               <i class="fa fa-trophy" aria-hidden="true"></i>
               <h2>RECONOCIMIENTOS</h2>
               <div class="item">
-                <h3>Rendimiento academico 2022<span>Junio 2022</span> </h3>
-                <p>Reconocimiento por destacada actuación académica, reflejada en calificaciones, proyectos y contribuciones dentro del Departamento de Ingeniería de la universidad. Además, fue reconocido por los propios profesores por su sobresaliente desempeño.</p>
+                <h3>Rendimiento académico 2022<span>Junio 2022</span> </h3>
+                <p>Reconocimiento por destacada actuación académica, reflejada en calificaciones, proyectos y contribuciones dentro del Departamento de Ingeniería.</p>
               </div>
-            </div>
+            </section>
 
-            <div class="title">
+            <section class="title">
               <i class="fa fa-code" aria-hidden="true"></i>
-              <h2>SKILLS</h2>
+              <h2>HABILIDADES</h2>
               <div class="item w33">
                 <h3>HTML5</h3>
                 <div class="skills">
@@ -124,7 +138,7 @@
               </div>
 
               <div class="item w33" >
-                <h3>JAVASCRIPT</h3>
+                <h3>JavaScript</h3>
                 <div class="skills">
                   <span style="width: 25%"></span>
                 </div>
@@ -142,13 +156,13 @@
                 </div>
               </div>
               <div class="item w33">
-                <h3>C/C++</h3>
+                <h3>C / C++</h3>
                 <div class="skills">
                   <span style="width: 25%"></span>
                 </div>
               </div>
 
-            </div>
+            </section>
 
           </div>
       </div>
